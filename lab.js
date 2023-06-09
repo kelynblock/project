@@ -71,4 +71,49 @@ class Hamster {
     }
   }
 
-  
+  // new Person
+const timmy = new Person("Timmy");
+
+// Age Timmy five years
+for (let i = 0; i < 5; i++) {
+  timmy.ageUp();
+}
+
+// Timmy eating five times
+for (let i = 0; i < 5; i++) {
+  timmy.eat();
+}
+
+// Timmy exercise five times
+for (let i = 0; i < 5; i++) {
+  timmy.exercise();
+}
+
+// Age Timmy 9 more years
+for (let i = 0; i < 9; i++) {
+  timmy.ageUp();
+}
+
+// Hamster named "Gus"
+const gus = new Hamster("Gus");
+
+// string "Timmy"
+gus.owner = "Timmy";
+
+// Timmy "buys" Gus
+timmy.buyHamster(gus);
+
+// Age Timmy 15 years
+for (let i = 0; i < 15; i++) {
+  timmy.ageUp();
+}
+
+// Timmy eat twice
+for (let i = 0; i < 2; i++) {
+  timmy.eat();
+}
+
+// Timmy exercise twice
+for (let i = 0; i < 2; i++) {
+  timmy.exercise();
+}
