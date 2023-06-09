@@ -117,3 +117,30 @@ for (let i = 0; i < 2; i++) {
 for (let i = 0; i < 2; i++) {
   timmy.exercise();
 }
+
+class Dinner {
+    constructor(appetizer, entree, dessert) {
+      this.appetizer = appetizer;
+      this.entree = entree;
+      this.dessert = dessert;
+    }
+  }
+  
+  class Chef {
+    createDinner(appetizer, entree, dessert) {
+      return new Dinner(appetizer, entree, dessert);
+    }
+  }
+  
+  // Create an instance of Chef
+  const chef = new Chef();
+  
+  // Create three Dinners using the Chef
+  const dinner1 = chef.createDinner("Salad", "Steak", "Chocolate Cake");
+  const dinner2 = chef.createDinner("Soup", "Fish", "Apple Pie");
+  const dinner3 = chef.createDinner("Bruschetta", "Pasta", "Tiramisu");
+  
+  // Log the Dinners
+  console.log(dinner1);
+  console.log(dinner2);
+  console.log(dinner3);
